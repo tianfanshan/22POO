@@ -131,5 +131,25 @@ guerreroAztec.drinkNesquik()
 console.log(guerreroAztec)
 
 //------------------------------------------------------------
-poder.defend(guerreroAztec)
-poder.attack(guerreroMaya)
+
+//Extra01:
+
+//------------------------------------------------------------
+
+
+
+class Gallery{
+    constructor(getRandomCivil,getRandomMilitary){
+        this.getRandomCivil = getRandomCivil;
+        this.getRandomMilitary = getRandomMilitary;
+    }
+    getAll(){
+        return this.getRandomCivil + this.getRandomMilitary
+    }
+}
+
+class Painter{
+    constructor(){
+        
+    }
+}
