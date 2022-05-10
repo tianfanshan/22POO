@@ -83,12 +83,12 @@ class warrior{
     defend(damage){
         console.log('hola')
         this.life = this.life - damage
+        return this.life
     }
 }
 
 let poder = new warrior(100,80)
 console.log(poder)
-
 
 
 //------------------------------------------------------------
@@ -129,6 +129,9 @@ let guerreroAztec = new Aztec(100,80,10)
 console.log(guerreroAztec)
 guerreroAztec.drinkNesquik()
 console.log(guerreroAztec)
+guerreroAztec.defend(guerreroMaya.attack())
+guerreroMaya.defend(guerreroAztec.attack())
+
 
 //------------------------------------------------------------
 
