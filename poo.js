@@ -73,15 +73,17 @@ pepito.asignar()
 
 
 class warrior{
-    constructor(life,power){
+    constructor(life,power,nombre){
      this.life = life;
      this.power = power;
+     this.nombre = nombre;
     }
     attack(){
+        console.log(`${this.nombre} con ${this.power} de power ataca`)
         return this.power
     }
     defend(damage){
-        console.log('hola')
+        console.log(`${this.nombre} recibe ${damage} de danio , le queda ${this.life - damage} de vida`)
         this.life = this.life - damage
         return this.life
     }
@@ -95,7 +97,7 @@ console.log(poder)
 
 class Maya extends warrior{
     constructor(life,power,colaCao){
-        super(life,power)
+        super(life,power,'maya')
         this.colaCao = colaCao;
     }
     drinkColaCao(){
@@ -115,7 +117,7 @@ console.log(guerreroMaya)
 
 class Aztec extends warrior{
     constructor(life,power,nesquik){
-        super(life,power)
+        super(life,power,'azteca')
         this.nesquik = nesquik;
     }
     drinkNesquik(){
