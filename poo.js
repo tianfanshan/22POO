@@ -83,9 +83,7 @@ class warrior{
         return this.power
     }
     defend(damage){
-        console.log(`${this.nombre} recibe ${damage} de danio , le queda ${this.life - damage} de vida`)
-        this.life = this.life - damage
-        return this.life
+        console.log(`${this.nombre} con ${this.life} de vida recibe ${damage} de danio , le queda ${this.life - damage} de vida`)
     }
 }
 
